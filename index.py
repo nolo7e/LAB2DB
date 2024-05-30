@@ -33,7 +33,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         )
 
         cursor = connection.cursor()
-        sql_select = 'EXEC JoinTables \'Objects\', \'Sector\''
+        sql_select = 'EXEC JoinTables \'Sector\', \'NaturalObjects\''
         cursor.execute(sql_select)
         results = cursor.fetchall()
 
